@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyMessenger">
         <activity
+            android:name=".ReceiveMessageActivity"
+            android:exported="true" />
+        <activity
             android:name=".CreateMessageActivity"
             android:exported="true">
             <intent-filter>
