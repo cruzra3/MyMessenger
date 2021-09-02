@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 public class ReceiveMessageActivity extends AppCompatActivity {
 
-    public static final String EXTRA_MESSAGE = "message";
+    public static final String EXTRA_MESSAGE = "message"; //
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
