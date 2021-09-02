@@ -16,6 +16,6 @@ public class CreateMessageActivity extends AppCompatActivity {
 
     public void onSendMessage(View view) {
         Intent intent = new Intent(this, ReceiveMessageActivity.class);
-        startActivity(intent);
+        startActivity(intent); //
     }
 }
