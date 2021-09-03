@@ -22,6 +22,11 @@ public class CreateMessageActivity extends AppCompatActivity {
         Intent intent = new Intent(Intent.ACTION_SEND);
         intent.setType("text/plain");
         intent.putExtra(Intent.EXTRA_TEXT, messageText);
-        startActivity(intent);
+        String chooserTitle = getString(R.string.chooser);
+        Intent choosenIntent = Intent.createChooser(intent, chooserTitle);
+//      Next line will ask if you want to choose an app always or just once
+//        startActivity(intent);
+//      Next line will always ask which app to choose,
+        startActivity(choosenIntent);
     }
 }
